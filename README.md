@@ -103,7 +103,8 @@ Folder: “no-access”, Group: “Domain Admins”, “Permissions: “Read/Wri
 </p>
 <p>
   
-  *![image](https://github.com/user-attachments/assets/4cfd735a-54aa-4a02-b755-1ee8f541ef52)
+  ![image](https://github.com/user-attachments/assets/34517dab-c638-4f05-980f-fe63f07e8534)
+
 
 
 </p>
@@ -118,28 +119,58 @@ Folder: “accounting”, Group: “ACCOUNTANTS”, Permissions: “Read/Write�
 
 <p>
   
-  ****![image](https://github.com/user-attachments/assets/e4fb3d13-bfdd-4d46-bc8e-0c77334
+  ![image](https://github.com/user-attachments/assets/288320cc-33db-45f3-9346-227176d9600e)
+
 
 </p>
-
-
-
-
-
-
-
-
-
-
-
 <p>
-  
-  ****![image](https://github.com/user-attachments/assets/e4fb3d13-bfdd-4d46-bc8e-0c77334
-
+  When we try to access the folder on client-1 we still do not get access to this folder because the access is only available to the users under the "ACCOUNTANTS" security group.
 </p>
 
 <p>
+
+![image](https://github.com/user-attachments/assets/ad8c57fc-1dc6-4671-86d2-5a8c2d91a2c7)
+
   
-  ****![image](https://github.com/user-attachments/assets/e4fb3d13-bfdd-4d46-bc8e-0c77334
+</p>
+
+<p>
+Now we must log out of client-1 and go back to DC-1 and add this user to the "ACCOUNTANTS" securtity group.
+  
+</p>
+
+<p>
+  
+  ![image](https://github.com/user-attachments/assets/5a817e2c-8614-419a-8be2-88b0f524d7cf)
+
+</p>
+<p>
+  Now that our user on client-1 is a part of the "ACCOUNTANTS" security group, we can log back in and attempt to gain access to the folder.
+</p>
+<p>
+
+![image](https://github.com/user-attachments/assets/d3aa1a5c-f7b8-4a29-a983-e8a203d9eed6)
+
+  
+</p>
+<p>
+  With this we can provide access to certain users for specific items. You can also give entire groups permissions through AD, allowing entire departments to have access to certain items on the computer.
+</p>
+
+<p>
+  
+  ![image](https://github.com/user-attachments/assets/ec0b7db8-faa4-4b84-a106-e46dfd4b4040)
+
+![image](https://github.com/user-attachments/assets/da27e32a-ff47-449d-b485-ca1972ebf810)
+
+![image](https://github.com/user-attachments/assets/92082708-617f-427d-80fe-0484d89b5395)
+
+</p>
+
+<p>
+  Now all "Employees" in the "SECURITY" group will have access to the aaccounting folder. </br>
+  </br>
+  </br>
+  Network file sharing, combined with proper permissions, enables efficient collaboration by allowing users to access and manage files over a network. However, it is crucial to implement strict access controls and permissions to ensure data security, privacy, and prevent unauthorized access or modifications.
 
 </p>
